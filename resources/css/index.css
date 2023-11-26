@@ -1,0 +1,3246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+@media (max-width: 2724px){
+    .container{
+        max-width: 2724;
+    }
+
+    .contact-btn{
+        display: grid;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+
+    .property-info{
+        display: block;
+    }
+
+
+    .container-fluid{
+        padding: 0;
+    }
+
+
+    #nav-logo{
+        color: #F0EBD8;
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    #nav-text{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    
+    #nav-text:hover{
+        filter: opacity(100%);
+    }
+    
+    #nav{
+        background-color: #1D2D44;
+    }
+    
+    #nav-button{
+        margin-right: 10px;
+    }
+    
+    #dropdown-nav{
+        background-color: #1D2D44;
+    }
+    
+    
+    
+    #dropdown-nav a{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        margin-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #dropdown-nav a:hover{
+        filter:opacity(100%);
+    }
+    
+    #contact-dropdown{
+        margin-left: 20px;
+        color: #F0EBD8;
+        filter: opacity(80%);
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #contact-dropdown:hover{
+        filter: opacity(100%);
+    }
+    
+    /* All of these classes and selectors use a Font Size 1vw */
+    p,h6,h5, #nav-text, #nav-logo, #contact-dropdown, .section p, .content a, .home-section a, .item-list, .condo-section a, .apartment-section a, .footer label, .socials-section a{
+        font-size: 1vw;
+    }
+
+    .houses-content p, .apartment-content p, .condo-content p{
+        font-size: 1vw;
+        max-width: 70%;
+    }
+
+    .contact-title h3{
+        font-size: 2.5vw;
+    }
+
+    h3, h4 {
+        font-size: 2vw;
+    }
+
+
+
+    
+    .banner{
+        position: fixed;
+        background-color: #1D2D44;
+        width: 100%;
+    }
+    
+    /* Global Selectors */
+    
+    .banner h1{
+        padding-left: 30px;
+        color: #F0EBD8;
+        font-size: 30px;
+    }
+    
+    .content{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/lounges-meadfoot-bay.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    header p{
+        font-size: 18px;
+    }
+    
+    h1, h2{
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 2vw;
+
+    }
+    
+    p{
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .about-section p{
+        font-size: 1.5vw;
+    }
+    
+    .seperator{
+        background-color: #1D2D44;
+        padding: 20px;
+        text-align: center;
+        color: #F0EBD8;
+    }
+    
+    
+    
+    
+    .row{
+        padding: 5px;
+        margin: auto;
+    }
+    
+    
+    button.home-section{
+        filter: opacity(0%);
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    button.home-section:hover{
+        filter: opacity(100%);
+    }
+    
+    .home-section, .condo-section, .apartment-section{
+        padding-top: 50px;
+        background-color: #F0EBD8;
+        padding-bottom: 50px;
+    }
+    
+    .home-section h5, .condo-section h5, .apartment-section h5{
+        margin-top: 10px;
+    }
+
+    .item-list{
+        margin-top: 20px;
+    }
+    
+    .item-list li{
+        list-style-type: none;
+        margin-bottom: 10px;
+        margin-left: -30px;
+        margin-right: 40px;
+        display: inline-block;
+    }
+
+
+
+    
+    
+    
+    
+    /* Team About CSS Section */
+    
+    .team-section h1{
+        background-color:#1D2D44;
+        padding-bottom: 140px;
+    }
+    
+    
+    .team-section h1{
+        padding-top:70px;
+        color: #F0EBD8;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .about-section{
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
+    #about-img{
+        margin-top: -130px;
+        width: 50%;
+        height: 50%;
+        padding-right: 10%;
+        margin-right: 20%;
+        margin-left: 30%;
+    }
+    
+    
+    .about-text{
+        margin-top: 30px;
+        color:#1D2D44;
+        text-align: center;
+        font-size: 18px;
+        display: block;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+    
+    
+    /* Customer Service Page */
+    .contact-banner{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/customer_service.webp");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .contact-title{
+        margin: auto;
+    }
+    
+    .contact-title h3{
+        padding-top: 30px;
+    }
+    
+    .table{
+        max-width: 55%;
+        border: 2px solid #1D2D44;
+    }
+    
+    .table thead{
+        background-color: #1D2D44;
+        color: #F0EBD8;
+    }
+    
+    .hotline-content, .email-content, .meeting-content{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .hours-section p, .email-section p, .meeting-section p{
+        text-align: center;
+        font-size: 1.5vw;
+    }
+
+    .hotline-content h3, .hours-section h3, .email-section h3, .meeting-section h3{
+        text-align: center;
+        font-size: 1.5vw;
+    }
+
+    .hotline-content i, .hours-section i, .email-section i, .meeting-section i{
+        text-align: center;
+        font-size: 1.5vw;
+    }    
+
+
+    
+    .hours-table{
+        margin-left: 31%;
+    }
+    
+    .meeting-form{
+        max-width: 50%;
+        margin-left: 25.5%;
+    }
+    
+    
+    /* Main Footer Section */
+    
+    .footer h6{
+        padding-top: 20px;
+    }
+    
+    .footer{
+        background-color: #1D2D44;
+        padding: 30px;
+        color: #F0EBD8;
+        text-align: center;
+    }
+
+    
+    
+    .socials-section{
+        padding-top: 20px;
+        align-items: center;
+        display: inline-block;
+        display: flex;
+    }
+    
+    .socials-section div{
+        margin: auto;
+    }
+    
+    
+    
+    
+    
+    
+    .socials-section a{
+        color: #F0EBD8;
+        text-decoration: none;
+    }
+    
+    
+    /* Houses Page */
+    
+    .home-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/houses-banner.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .property-info-alt{
+        display: none;
+    }
+
+    .house-box1, .house-box2, .house-box3, .house-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .house-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+    .about-house-text{
+        display: none;
+    }
+
+    .price{
+        margin-bottom: 20px;
+    }
+
+
+
+
+    
+    
+    
+    /* Condo Section */
+    
+    .condo-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/condo-banner.jpg");
+        background-clip: text;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        padding: 100px;
+        color: #F0EBD8;
+    }
+    
+    .condo-box1, .condo-box2, .condo-box3, .condo-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .condo-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+    
+    .about-condo-text{
+        display: none;
+    }
+
+    /* Apartment Section */
+    
+    .apartment-section{
+        background-image: linear-gradient(to bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url("../images/apartment-ses.jpg");
+        display: flex;
+        background-position: center;
+        background-clip: text;
+        background-size: cover;
+        color: #F0EBD8;
+        padding: 100px;
+    }
+    
+    .apartment-box1, .apartment-box2, .apartment-box3, .apartment-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .apartment-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+    .about-apartment-text{
+        display: none;
+    }
+}
+
+/* 3xl */ 
+@media (max-width: 2669px){
+    .container{
+        max-width: 2669px;
+    }
+
+    .contact-btn{
+        display: grid;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+
+    .property-info{
+        display: block;
+    }
+
+
+    .container-fluid{
+        padding: 0;
+    }
+
+
+    #nav-logo{
+        color: #F0EBD8;
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    #nav-text{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    
+    #nav-text:hover{
+        filter: opacity(100%);
+    }
+    
+    #nav{
+        background-color: #1D2D44;
+    }
+    
+    #nav-button{
+        margin-right: 10px;
+    }
+    
+    #dropdown-nav{
+        background-color: #1D2D44;
+    }
+    
+    
+    
+    #dropdown-nav a{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        margin-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #dropdown-nav a:hover{
+        filter:opacity(100%);
+    }
+    
+    #contact-dropdown{
+        margin-left: 20px;
+        color: #F0EBD8;
+        filter: opacity(80%);
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #contact-dropdown:hover{
+        filter: opacity(100%);
+    }
+    
+    /* All of these classes and selectors use a Font Size 1vw */
+    p,h6,h5, #nav-text, #nav-logo, #contact-dropdown, .section p, .content a, .home-section a, .item-list, .condo-section a, .apartment-section a, .footer label, .socials-section a{
+        font-size: 1vw;
+    }
+
+    .houses-content p, .apartment-content p, .condo-content p{
+        font-size: 1vw;
+        max-width: 70%;
+    }
+
+    .contact-title h3{
+        font-size: 2.5vw;
+    }
+
+    h3, h4 {
+        font-size: 2vw;
+    }
+
+
+
+    
+    .banner{
+        position: fixed;
+        background-color: #1D2D44;
+        width: 100%;
+    }
+    
+    /* Global Selectors */
+    
+    .banner h1{
+        padding-left: 30px;
+        color: #F0EBD8;
+        font-size: 30px;
+    }
+    
+    .content{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/lounges-meadfoot-bay.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    header p{
+        font-size: 18px;
+    }
+    
+    h1, h2{
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 2vw;
+
+    }
+    
+    p{
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .about-section p{
+        font-size: 1.5vw;
+    }
+    
+    .seperator{
+        background-color: #1D2D44;
+        padding: 20px;
+        text-align: center;
+        color: #F0EBD8;
+    }
+    
+    
+    
+    
+    .row{
+        padding: 5px;
+        margin: auto;
+    }
+    
+    
+    button.home-section{
+        filter: opacity(0%);
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    button.home-section:hover{
+        filter: opacity(100%);
+    }
+    
+    .home-section, .condo-section, .apartment-section{
+        padding-top: 50px;
+        background-color: #F0EBD8;
+        padding-bottom: 50px;
+    }
+    
+    .home-section h5, .condo-section h5, .apartment-section h5{
+        margin-top: 10px;
+    }
+
+    .item-list{
+        margin-top: 20px;
+    }
+    
+    .item-list li{
+        list-style-type: none;
+        margin-bottom: 10px;
+        margin-left: -30px;
+        margin-right: 40px;
+        display: inline-block;
+    }
+
+
+
+    
+    
+    
+    
+    /* Team About CSS Section */
+    
+    .team-section h1{
+        background-color:#1D2D44;
+        padding-bottom: 140px;
+    }
+    
+    
+    .team-section h1{
+        padding-top:70px;
+        color: #F0EBD8;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .about-section{
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
+    #about-img{
+        margin-top: -130px;
+        width: 50%;
+        height: 50%;
+        padding-right: 10%;
+        margin-right: 20%;
+        margin-left: 30%;
+    }
+    
+    
+    .about-text{
+        margin-top: 30px;
+        color:#1D2D44;
+        text-align: center;
+        font-size: 18px;
+        display: block;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+    
+    
+    /* Customer Service Page */
+    .contact-banner{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/customer_service.webp");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .contact-title{
+        margin: auto;
+    }
+    
+    .contact-title h3{
+        padding-top: 30px;
+    }
+    
+    .table{
+        max-width: 55%;
+        border: 2px solid #1D2D44;
+    }
+    
+    .table thead{
+        background-color: #1D2D44;
+        color: #F0EBD8;
+    }
+    
+    .hotline-content, .email-content, .meeting-content{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .hours-section p, .email-section p, .meeting-section p{
+        text-align: center;
+        font-size: 1.5vw;
+    }
+
+    .hotline-content h3, .hours-section h3, .email-section h3, .meeting-section h3{
+        text-align: center;
+        font-size: 1.5vw;
+    }
+
+    .hotline-content i, .hours-section i, .email-section i, .meeting-section i{
+        text-align: center;
+        font-size: 1.5vw;
+    }    
+
+
+    
+    .hours-table{
+        margin-left: 31%;
+    }
+    
+    .meeting-form{
+        max-width: 50%;
+        margin-left: 25.5%;
+    }
+    
+    
+    /* Main Footer Section */
+    
+    .footer h6{
+        padding-top: 20px;
+    }
+    
+    .footer{
+        background-color: #1D2D44;
+        padding: 30px;
+        color: #F0EBD8;
+        text-align: center;
+    }
+
+    
+    
+    .socials-section{
+        padding-top: 20px;
+        align-items: center;
+        display: inline-block;
+        display: flex;
+    }
+    
+    .socials-section div{
+        margin: auto;
+    }
+    
+    
+    
+    
+    
+    
+    .socials-section a{
+        color: #F0EBD8;
+        text-decoration: none;
+    }
+    
+    
+    /* Houses Page */
+    
+    .home-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/houses-banner.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .property-info-alt{
+        display: none;
+    }
+
+    .house-box1, .house-box2, .house-box3, .house-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .house-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+    .about-house-text{
+        display: none;
+    }
+
+    .price{
+        margin-bottom: 20px;
+    }
+
+
+
+
+    
+    
+    
+    /* Condo Section */
+    
+    .condo-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/condo-banner.jpg");
+        background-clip: text;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        padding: 100px;
+        color: #F0EBD8;
+    }
+    
+    .condo-box1, .condo-box2, .condo-box3, .condo-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .condo-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+    
+    .about-condo-text{
+        display: none;
+    }
+
+    /* Apartment Section */
+    
+    .apartment-section{
+        background-image: linear-gradient(to bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url("../images/apartment-ses.jpg");
+        display: flex;
+        background-position: center;
+        background-clip: text;
+        background-size: cover;
+        color: #F0EBD8;
+        padding: 100px;
+    }
+    
+    .apartment-box1, .apartment-box2, .apartment-box3, .apartment-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .apartment-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+    .about-apartment-text{
+        display: none;
+    }
+
+
+
+    
+
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .container {
+        max-width: 1280px;
+    }
+
+
+    .container-fluid{
+        padding: 0;
+    }
+    
+
+    #nav-text{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #nav-text:hover{
+        filter: opacity(100%);
+    }
+    
+    #nav{
+        background-color: #1D2D44;
+    }
+    
+    #nav-button{
+        margin-right: 10px;
+    }
+    
+    #dropdown-nav{
+        background-color: #1D2D44;
+    }
+    
+    
+    
+    #dropdown-nav a{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        margin-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 15px;
+    }
+    
+    #dropdown-nav a:hover{
+        filter:opacity(100%);
+    }
+    
+    #contact-dropdown{
+        margin-left: 20px;
+        color: #F0EBD8;
+        filter: opacity(80%);
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #contact-dropdown:hover{
+        filter: opacity(100%);
+    }
+    
+    .price{
+        margin-bottom: 20px;
+    }
+    
+    
+    .banner{
+        position: fixed;
+        background-color: #1D2D44;
+        width: 100%;
+    }
+    
+    #nav-logo{
+        color: #F0EBD8;
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    /* Global Selectors */
+    
+    .banner h1{
+        padding-left: 30px;
+        color: #F0EBD8;
+        font-size: 30px;
+    }
+    
+    .content{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/lounges-meadfoot-bay.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    header p{
+        font-size: 18px;
+    }
+    
+    h1, h2{
+        font-family: 'Inter Tight', sans-serif;
+    }
+    
+    p{
+        font-family: 'Titillium Web', sans-serif;
+    }
+    
+    .seperator{
+        background-color: #1D2D44;
+        padding: 20px;
+        text-align: center;
+        color: #F0EBD8;
+    }
+    
+    .item-list{
+        font-size: 20px;
+    }
+    
+    
+    
+    .row{
+        padding: 5px;
+        margin: auto;
+    }
+    
+    
+    button.home-section{
+        filter: opacity(0%);
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    button.home-section:hover{
+        filter: opacity(100%);
+    }
+    
+    .home-section, .condo-section, .apartment-section{
+        padding-top: 50px;
+        background-color: #F0EBD8;
+        padding-bottom: 50px;
+    }
+    
+    .home-section h5, .condo-section h5, .apartment-section h5{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+
+    .item-list li{
+        list-style-type: none;
+        margin-bottom: 10px;
+        margin-left: -30px;
+        margin-right: 40px;
+        display: inline-block;
+    }
+
+    .houses-content p, .apartment-content p, .condo-content p, .section p{
+        font-size: 1vw;
+        max-width: 65%;
+    }
+
+    .hotline-section p{
+        font-size: 1.5vw;
+    }
+    
+    
+    
+    /* Team About CSS Section */
+    
+    .team-section h1{
+        background-color:#1D2D44;
+        padding-bottom: 140px;
+    }
+    
+    
+    .team-section h1{
+        padding-top:70px;
+        color: #F0EBD8;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .about-section{
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: 200px;
+    }
+    
+    #about-img{
+        margin-top: -130px;
+        width: 50%;
+        height: 50%;
+        padding-right: 10%;
+        margin-right: 20%;
+        margin-left: 30%;
+    }
+    
+    
+    .about-text{
+        margin-top: 30px;
+        margin-bottom: 60px;
+        color:#1D2D44;
+        text-align: center;
+        font-size: 18px;
+        display: block;
+        justify-content: center;
+    }
+    
+    
+    /* Customer Service Page */
+    .contact-banner{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/customer_service.webp");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .contact-title{
+        margin: auto;
+    }
+    
+    .contact-title h3{
+        padding-top: 30px;
+        font-size: 40px;
+    }
+    
+    .table{
+        max-width: 55%;
+        border: 2px solid #1D2D44;
+    }
+    
+    .table thead{
+        background-color: #1D2D44;
+        color: #F0EBD8;
+    }
+    
+    .hotline-content, .email-content, .meeting-content{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .hours-section p, .email-section p, .meeting-section p{
+        text-align: center;
+    }
+    
+    .hours-table{
+        margin-left: 31%;
+    }
+    
+    .meeting-form{
+        max-width: 50%;
+        margin-left: 25.5%;
+    }
+    
+    
+    /* Main Footer Section */
+    
+    .footer label{
+        font-size: 15px;
+    }
+
+    .footer h6{
+        padding-top: 20px;
+    }
+    
+    .footer{
+        background-color: #1D2D44;
+        padding: 30px;
+        padding-bottom: 10px;
+        color: #F0EBD8;
+        text-align: center;
+    }
+    
+    
+    .socials-section{
+        padding-top: 20px;
+        align-items: center;
+        display: inline-block;
+        display: flex;
+    }
+    
+    .socials-section div{
+        margin: auto;
+    }
+    
+    
+    
+    
+    
+    
+    .socials-section a{
+        color: #F0EBD8;
+        text-decoration: none;
+        font-size: 15px
+    }
+    
+    
+    /* Houses Page */
+    
+    .home-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/houses-banner.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .house-box1, .house-box2, .house-box3, .house-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .house-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+    .about-house-text{
+        display: none;
+    }
+    
+    
+    
+    /* Condo Section */
+    
+    .condo-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/condo-banner.jpg");
+        background-clip: text;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        padding: 100px;
+        color: #F0EBD8;
+    }
+    
+    .condo-box1, .condo-box2, .condo-box3, .condo-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .condo-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+    .about-condo-text{
+        display: none;
+    }
+    
+    /* Apartment Section */
+    
+    .apartment-section{
+        background-image: linear-gradient(to bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url("../images/apartment-ses.jpg");
+        display: flex;
+        background-position: center;
+        background-clip: text;
+        background-size: cover;
+        color: #F0EBD8;
+        padding: 100px;
+    }
+    
+    .apartment-box1, .apartment-box2, .apartment-box3, .apartment-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .apartment-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+    .about-apartment-text{
+        display: none;
+    }
+    
+
+}
+
+/* xl */
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .container-fluid{
+        padding: 0;
+    }
+
+    
+    #nav-text{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 18px;
+    }
+    
+    #nav-text:hover{
+        filter: opacity(100%);
+    }
+    
+    #nav{
+        background-color: #1D2D44;
+    }
+    
+    #nav-button{
+        margin-right: 10px;
+    }
+    
+    #dropdown-nav{
+        background-color: #1D2D44;
+    }
+    
+    
+    
+    #dropdown-nav a{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        margin-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 13px;
+    }
+    
+    #dropdown-nav a:hover{
+        filter:opacity(100%);
+    }
+    
+    #contact-dropdown{
+        margin-left: 15px;
+        color: #F0EBD8;
+        filter: opacity(80%);
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 17px;
+    }
+    
+    #contact-dropdown:hover{
+        filter: opacity(100%);
+    }
+    
+    
+    
+    .banner{
+        position: fixed;
+        background-color: #1D2D44;
+        width: 100%;
+    }
+    
+    #nav-logo{
+        color: #F0EBD8;
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    /* Global Selectors */
+    
+    .banner h1{
+        padding-left: 30px;
+        color: #F0EBD8;
+        font-size: 30px;
+    }
+
+    .price{
+        margin-bottom: 20px;
+    }
+    
+    .content{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/lounges-meadfoot-bay.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .content p, .houses-content p, .apartment-content p, .condo-section p{
+        font-size: 15px;
+    }
+    
+    h1, h2{
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 35px;
+    }
+
+    h3, h4{
+        font-size: 30px;
+    }
+
+    .item-list li{
+        font-size: 20px;
+    }
+    
+    p{
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 18px;
+    }
+    
+    .seperator{
+        background-color: #1D2D44;
+        padding: 20px;
+        text-align: center;
+        color: #F0EBD8;
+    }
+    
+    
+    
+    
+    .row{
+        padding: 5px;
+        margin: auto;
+    }
+    
+    
+    button.home-section{
+        filter: opacity(0%);
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    button.home-section:hover{
+        filter: opacity(100%);
+    }
+    
+    .home-section, .condo-section, .apartment-section{
+        padding-top: 50px;
+        background-color: #F0EBD8;
+        padding-bottom: 50px;
+    }
+
+    
+    .home-section h5, .condo-section h5, .apartment-section h5{
+        margin-top: 10px;
+    }
+
+    .item-list{
+        margin-top: 20px;
+        max-width: 80%;
+    }
+    
+    .item-list li{
+        list-style-type: none;
+        margin-bottom: 10px;
+        margin-left: -30px;
+        font-size: 23px;
+    }
+        
+    
+    
+    /* Team About CSS Section */
+    
+    .team-section h1{
+        background-color:#1D2D44;
+        padding-bottom: 140px;
+    }
+    
+    
+    .team-section h1{
+        padding-top:70px;
+        color: #F0EBD8;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .about-section{
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
+    #about-img{
+        margin-top: -130px;
+        width: 50%;
+        height: 50%;
+        padding-right: 10%;
+        margin-right: 20%;
+        margin-left: 30%;
+    }
+    
+    
+    .about-text{
+        margin-top: 30px;
+        margin-bottom: 60px;
+        color:#1D2D44;
+        text-align: center;
+        font-size: 18px;
+        display: block;
+        justify-content: center;
+    }
+    
+    
+    /* Customer Service Page */
+    .contact-banner{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/customer_service.webp");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .contact-title{
+        margin: auto;
+    }
+    
+    .contact-title h3{
+        padding-top: 30px;
+        font-size: 40px;
+    }
+    
+    .table{
+        max-width: 55%;
+        border: 2px solid #1D2D44;
+    }
+    
+    .table thead{
+        background-color: #1D2D44;
+        color: #F0EBD8;
+    }
+    
+    .hotline-content, .email-content, .meeting-content{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .hours-section p, .email-section p, .meeting-section p{
+        text-align: center;
+    }
+    
+    .hours-table{
+        margin-left: 31%;
+    }
+    
+    .meeting-form{
+        max-width: 50%;
+        margin-left: 25.5%;
+    }
+    
+    
+    /* Main Footer Section */
+    
+    .footer h6{
+        padding-top: 20px;
+        font-size: 18px;
+    }
+    
+    .footer{
+        background-color: #1D2D44;
+        padding: 30px;
+        padding-bottom: 10px;
+        color: #F0EBD8;
+        text-align: center;
+    }
+    
+    
+    .socials-section{
+        padding-top: 20px;
+        align-items: center;
+        display: inline-block;
+        display: flex;
+    }
+    
+    .socials-section div{
+        margin: auto;
+    }
+    
+    
+    .socials-section a{
+        color: #F0EBD8;
+        text-decoration: none;
+    }
+    
+    
+    /* Houses Page */
+    
+    .home-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/houses-banner.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .house-box1, .house-box2, .house-box3, .house-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+    
+    .house-box-text{
+        margin-left: 10px;
+        max-width: 45%;
+    }
+    
+    .about-house-text{
+        display: block;
+        margin-left: 5px;
+    }
+
+    .about-house-text-alt{
+        display: none;
+    }
+        
+
+    /* Condo Section */
+    
+    .condo-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/condo-banner.jpg");
+        background-clip: text;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        padding: 100px;
+        color: #F0EBD8;
+    }
+    
+    .condo-box1, .condo-box2, .condo-box3, .condo-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+    
+    .condo-box-text{
+        margin-left: 20px;
+        max-width: 45%;
+    }
+
+    .about-condo-text{
+        display: block;
+        margin-left: 5px;
+    }
+
+    .about-condo-text-alt{
+        display: none;
+    }
+
+
+
+
+    
+    /* Apartment Section */
+    
+    .apartment-section{
+        background-image: linear-gradient(to bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url("../images/apartment-ses.jpg");
+        display: flex;
+        background-position: center;
+        background-clip: text;
+        background-size: cover;
+        color: #F0EBD8;
+        padding: 100px;
+    }
+    
+    .apartment-box1, .apartment-box2, .apartment-box3, .apartment-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 15px;
+
+    }
+    
+    .apartment-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+
+    .apartment-box4-img{
+        max-width: 60%;
+    }
+
+
+    .about-apartment-text{
+        display: block;
+        margin-left: 5px;
+    }
+
+    .about-apartment-text-alt{
+        display: none;
+    }
+
+    
+
+    
+
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .property-info{
+        display: none;
+    }
+
+    .property-info-alt{
+        display: block;
+    }
+
+
+
+
+
+    .container-fluid{
+        padding: 0;
+    }
+
+    #nav-text{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #nav-text:hover{
+        filter: opacity(100%);
+    }
+    
+    #nav{
+        background-color: #1D2D44;
+    }
+    
+    #nav-button{
+        margin-right: 10px;
+    }
+    
+    #dropdown-nav{
+        background-color: #1D2D44;
+    }
+    
+    
+    
+    #dropdown-nav a{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        margin-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 15px;
+    }
+    
+    #dropdown-nav a:hover{
+        filter:opacity(100%);
+    }
+    
+    #contact-dropdown{
+        margin-left: 20px;
+        color: #F0EBD8;
+        filter: opacity(80%);
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #contact-dropdown:hover{
+        filter: opacity(100%);
+    }
+    
+    
+    
+    .banner{
+        position: fixed;
+        background-color: #1D2D44;
+        width: 100%;
+    }
+    
+    #nav-logo{
+        color: #F0EBD8;
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    /* Global Selectors */
+    
+    .banner h1{
+        padding-left: 30px;
+        color: #F0EBD8;
+        font-size: 30px;
+    }
+    
+    .content{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/lounges-meadfoot-bay.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    header p{
+        font-size: 18px;
+    }
+    
+    h1, h2{
+        font-family: 'Inter Tight', sans-serif;;
+    }
+    
+    h3, h4{
+        font-size: 25px;
+    }
+
+    p{
+        font-family: 'Titillium Web', sans-serif;
+    }
+    
+    .seperator{
+        background-color: #1D2D44;
+        padding: 20px;
+        text-align: center;
+        color: #F0EBD8;
+    }
+    
+    
+    
+    
+    .row{
+        padding: 5px;
+        margin: auto;
+    }
+    
+    
+    button.home-section{
+        filter: opacity(0%);
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    button.home-section:hover{
+        filter: opacity(100%);
+    }
+    
+    .home-section, .condo-section, .apartment-section{
+        padding-top: 50px;
+        background-color: #F0EBD8;
+        padding-bottom: 50px;
+    }
+    
+    .home-section h5, .condo-section h5, .apartment-section h5{
+        margin-top: 10px;
+    }
+    
+    .item-list li{
+        list-style-type: none;
+        margin-bottom: 10px;
+        margin-left: -30px;
+        font-size: 2vw;
+    }
+    
+    .price{
+        margin-top: -10px;
+        float: left;
+        margin-bottom: -10px;
+    }
+    
+    
+    
+    /* Team About CSS Section */
+    
+    .team-section h1{
+        background-color:#1D2D44;
+        padding-bottom: 140px;
+    }
+    
+    
+    .team-section h1{
+        padding-top:70px;
+        color: #F0EBD8;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .about-section{
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .about-section p {
+        font-size: 20px;
+    }
+    
+    #about-img{
+        margin-top: -130px;
+        width: 50%;
+        height: 50%;
+        padding-right: 10%;
+        margin-right: 20%;
+        margin-left: 30%;
+    }
+    
+    
+    .about-text{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color:#1D2D44;
+        text-align: center;
+        font-size: 18px;
+        display: block;
+        justify-content: center;
+    }
+    
+    
+    /* Customer Service Page */
+    .contact-banner{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/customer_service.webp");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        color: #F0EBD8;
+    }
+    
+    .contact-title{
+        margin: auto;
+    }
+    
+    .contact-title h3{
+        padding-top: 30px;
+        font-size: 40px;
+    }
+    
+    .table{
+        max-width: 55%;
+        border: 2px solid #1D2D44;
+    }
+    
+    .table thead{
+        background-color: #1D2D44;
+        color: #F0EBD8;
+    }
+    
+    .hotline-content, .email-content, .meeting-content{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .hours-section p, .email-section p, .meeting-section p{
+        text-align: center;
+    }
+    
+    .hours-table{
+        margin-left: 31%;
+    }
+    
+    .meeting-form{
+        max-width: 50%;
+        margin-left: 25.5%;
+    }
+    
+    
+    /* Main Footer Section */
+    
+    .footer h6{
+        padding-top: 20px;
+    }
+    
+    .footer{
+        background-color: #1D2D44;
+        padding: 30px;
+        padding-bottom: 10px;
+        color: #F0EBD8;
+        text-align: center;
+    }
+    
+    
+    .socials-section{
+        padding-top: 20px;
+        align-items: center;
+        display: inline-block;
+        display: flex;
+    }
+    
+    .socials-section div{
+        margin: auto;
+    }
+    
+    
+    
+    
+    
+    
+    .socials-section a{
+        color: #F0EBD8;
+        text-decoration: none;
+    }
+    
+    
+    /* Houses Page */
+    
+    .home-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/houses-banner.jpg");
+        background-size: cover;
+        display: flex;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        color: #F0EBD8;
+    }
+
+    .house-box1-img {
+        max-height: 360px;
+    }
+    
+    .house-box1, .house-box2, .house-box3, .house-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    
+    .house-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+
+
+    
+    
+    
+    /* Condo Section */
+    
+    .condo-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/condo-banner.jpg");
+        background-clip: text;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        padding: 100px;
+        color: #F0EBD8;
+    }
+    
+    .condo-box1, .condo-box2, .condo-box3, .condo-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .condo-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+
+
+    
+
+
+
+    /* Apartment Section */
+    
+    .apartment-section{
+        background-image: linear-gradient(to bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url("../images/apartment-ses.jpg");
+        display: flex;
+        background-position: center;
+        background-clip: text;
+        background-size: cover;
+        color: #F0EBD8;
+        padding: 100px;
+    }
+    
+    .apartment-box1, .apartment-box2, .apartment-box3, .apartment-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .apartment-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+    
+
+
+
+    
+}
+
+/* md */
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+
+    .container-fluid{
+        padding: 0;
+    }
+    
+    #nav-text{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #nav-text:hover{
+        filter: opacity(100%);
+    }
+    
+    #nav{
+        background-color: #1D2D44;
+    }
+    
+    #nav-button{
+        margin-right: 10px;
+    }
+    
+    #dropdown-nav{
+        background-color: #1D2D44;
+    }
+    
+    
+    
+    #dropdown-nav a{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        margin-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 15px;
+    }
+    
+    #dropdown-nav a:hover{
+        filter:opacity(100%);
+    }
+    
+    #contact-dropdown{
+        margin-left: 20px;
+        color: #F0EBD8;
+        filter: opacity(80%);
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #contact-dropdown:hover{
+        filter: opacity(100%);
+    }
+    
+    
+    
+    .banner{
+        position: fixed;
+        background-color: #1D2D44;
+        width: 100%;
+    }
+    
+    #nav-logo{
+        color: #F0EBD8;
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    /* Global Selectors */
+    
+    .banner h1{
+        padding-left: 30px;
+        color: #F0EBD8;
+        font-size: 30px;
+    }
+    
+    .content{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/lounges-meadfoot-bay.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+
+    
+    header p{
+        font-size: 18px;
+    }
+    
+    h1, h2{
+        font-family: 'Inter Tight', sans-serif;;
+    }
+
+    h3, h4{
+        font-size: 22px;
+    }
+    
+    p{
+        font-family: 'Titillium Web', sans-serif;
+    }
+    
+    .seperator{
+        background-color: #1D2D44;
+        padding: 20px;
+        text-align: center;
+        color: #F0EBD8;
+    }
+    
+    .item-list li{
+        list-style-type: none;
+        margin-bottom: 10px;
+        margin-left: -30px;
+    }
+    
+
+    
+    
+    
+    .row{
+        padding: 5px;
+        margin: auto;
+    }
+    
+    
+    button.home-section{
+        filter: opacity(0%);
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    button.home-section:hover{
+        filter: opacity(100%);
+    }
+    
+    .home-section, .condo-section, .apartment-section{
+        padding-top: 50px;
+        background-color: #F0EBD8;
+        padding-bottom: 50px;
+    }
+
+    .home-section p, .condo-section p, .apartment-section p {
+        max-width: 100%;
+    }
+    
+    .home-section h5, .condo-section h5, .apartment-section h5{
+        margin-top: 10px;
+    }
+
+    
+    .item-list li{
+        list-style-type: none;
+        margin-bottom: 5px;
+        margin-left: -30px;
+        font-size: 15px;
+    }
+
+    .item-list{
+        margin-bottom: -40px;
+    }
+    
+    
+    
+    
+    /* Team About CSS Section */
+    
+    .team-section h1{
+        background-color:#1D2D44;
+        padding-bottom: 140px;
+    }
+    
+    
+    .team-section h1{
+        padding-top:70px;
+        color: #F0EBD8;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .about-section{
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
+    #about-img{
+        margin-top: -130px;
+        width: 50%;
+        height: 50%;
+        padding-right: 10%;
+        margin-right: 20%;
+        margin-left: 30%;
+    }
+    
+    
+    .about-text{
+        margin-top: 30px;
+        margin-bottom: 70px;
+        color:#1D2D44;
+        text-align: center;
+        font-size: 18px;
+        display: block;
+        justify-content: center;
+    }
+    
+    
+    /* Customer Service Page */
+    .contact-banner{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/customer_service.webp");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .contact-title{
+        margin: auto;
+    }
+    
+    .contact-title h3{
+        padding-top: 30px;
+        font-size: 40px;
+    }
+    
+    .table{
+        max-width: 55%;
+        border: 2px solid #1D2D44;
+    }
+    
+    .table thead{
+        background-color: #1D2D44;
+        color: #F0EBD8;
+    }
+    
+    .hotline-content p, .email-content, .meeting-content{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    
+    .hours-section p, .email-section p, .meeting-section p{
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .hours-table{
+        margin-left: 31%;
+    }
+    
+    .meeting-form{
+        max-width: 50%;
+        margin-left: 25.5%;
+    }
+    
+    
+    /* Main Footer Section */
+    
+    .footer h6{
+        padding-top: 20px;
+    }
+    
+    .footer{
+        background-color: #1D2D44;
+        padding: 30px;
+        padding-bottom: 10px;
+        color: #F0EBD8;
+        text-align: center;
+    }
+    
+    
+    .socials-section{
+        padding-top: 20px;
+        align-items: center;
+        display: inline-block;
+        display: flex;
+    }
+    
+    .socials-section div{
+        margin: auto;
+    }
+    
+    
+    
+    
+    
+    
+    .socials-section a{
+        color: #F0EBD8;
+        text-decoration: none;
+    }
+    
+    
+    /* Houses Page */
+
+    .property-info{
+        display: none;
+    }
+
+    .property-info-content{
+        display: flex;
+        margin: 5px 0 0 5px;
+    }
+
+    .price{
+        margin-top: 30px;
+    }
+    
+    .home-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/houses-banner.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .house-box1, .house-box2, .house-box3, .house-box4{
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .house-box1-img, .house-box2-img,.house-box3-img,.house-box4-img {
+        margin-top: 10px;
+    }
+    
+    .house-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+
+
+    
+    
+    
+    /* Condo Section */
+    
+    .condo-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/condo-banner.jpg");
+        background-clip: text;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        padding: 100px;
+        color: #F0EBD8;
+    }
+    
+    .condo-box1, .condo-box2, .condo-box3, .condo-box4{
+        display: flex;
+    }
+
+
+    
+    .condo-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+
+
+    
+    /* Apartment Section */
+    
+    .apartment-section{
+        background-image: linear-gradient(to bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url("../images/apartment-ses.jpg");
+        display: flex;
+        background-position: center;
+        background-clip: text;
+        background-size: cover;
+        color: #F0EBD8;
+        padding: 100px;
+    }
+    
+
+
+    .apartment-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+    
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+
+    .container-fluid{
+        padding: 0;
+    }
+    
+    #nav-text{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #nav-text:hover{
+        filter: opacity(100%);
+    }
+    
+    #nav{
+        background-color: #1D2D44;
+    }
+    
+    #nav-button{
+        margin-right: 10px;
+    }
+    
+    #dropdown-nav{
+        background-color: #1D2D44;
+    }
+    
+    
+    
+    #dropdown-nav a{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        margin-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 15px;
+    }
+    
+    #dropdown-nav a:hover{
+        filter:opacity(100%);
+    }
+    
+    #contact-dropdown{
+        margin-left: 20px;
+        color: #F0EBD8;
+        filter: opacity(80%);
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #contact-dropdown:hover{
+        filter: opacity(100%);
+    }
+    
+    
+    
+    .banner{
+        position: fixed;
+        background-color: #1D2D44;
+        width: 100%;
+    }
+    
+    #nav-logo{
+        color: #F0EBD8;
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    /* Global Selectors */
+    
+    .banner h1{
+        padding-left: 30px;
+        color: #F0EBD8;
+        font-size: 30px;
+    }
+    
+    .content{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/lounges-meadfoot-bay.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+
+    .section p , .home-section p, .apartment-section p, .condo-section p{
+        max-width: 140%;
+    }
+
+    .section .btn{
+        font-size: 15px;
+    }
+    
+    header p{
+        font-size: 18px;
+    }
+    
+    h1, h2{
+        font-family: 'Inter Tight', sans-serif;
+    }
+
+    h3, h4{
+        font-size: 23px;
+    }
+    
+    p{
+        font-family: 'Titillium Web', sans-serif;
+    }
+    
+    .seperator{
+        background-color: #1D2D44;
+        padding: 20px;
+        text-align: center;
+        color: #F0EBD8;
+    }
+    
+    .item-list li{
+        list-style-type: none;
+        margin-bottom: 10px;
+        margin-left: -30px;
+    }
+    
+    
+    
+    .row{
+        padding: 5px;
+        margin: auto;
+    }
+    
+    
+    button.home-section{
+        filter: opacity(0%);
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    button.home-section:hover{
+        filter: opacity(100%);
+    }
+    
+    .home-section, .condo-section, .apartment-section{
+        padding-top: 50px;
+        background-color: #F0EBD8;
+        padding-bottom: 50px;
+    }
+
+
+    .home-section .btn, .apartment-section .btn, .condo-section .btn{
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+
+    
+    .home-section h5, .condo-section h5, .apartment-section h5{
+        margin-top: 10px;
+    }
+    
+    .item-list li{
+        list-style-type: none;
+        margin-bottom: 5px;
+        margin-left: -30px;
+        font-size: 15px;
+    }
+
+    .item-list li, .price{
+        font-size: 2.1vw;
+    }
+    
+    
+    
+    
+    
+    /* Team About CSS Section */
+    
+    .team-section h1{
+        background-color:#1D2D44;
+        padding-bottom: 140px;
+    }
+    
+    
+    .team-section h1{
+        padding-top:70px;
+        color: #F0EBD8;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .about-section{
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    
+    .about-section p{
+        font-size: 18px;
+    }
+
+    
+    #about-img{
+        margin-top: -130px;
+        width: 50%;
+        height: 50%;
+        padding-right: 10%;
+        margin-right: 20%;
+        margin-left: 30%;
+    }
+    
+    
+    .about-text{
+        margin-top: 30px;
+        margin-bottom: 60px;
+        color:#1D2D44;
+        text-align: center;
+        font-size: 18px;
+        display: block;
+        justify-content: center;
+    }
+    
+    
+    /* Customer Service Page */
+    .contact-banner{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/customer_service.webp");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .contact-title{
+        margin: auto;
+    }
+    
+    .contact-title h3{
+        padding-top: 30px;
+        font-size: 40px;
+    }
+    
+    .table{
+        max-width: 55%;
+        border: 2px solid #1D2D44;
+    }
+    
+    .table thead{
+        background-color: #1D2D44;
+        color: #F0EBD8;
+    }
+    
+    .hotline-content, .email-content, .meeting-content{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .hours-section p, .email-section p, .meeting-section p{
+        text-align: center;
+    }
+    
+    .hours-table{
+        margin-left: 31%;
+    }
+    
+    .meeting-form{
+        max-width: 50%;
+        margin-left: 25.5%;
+    }
+    
+    
+    /* Main Footer Section */
+    
+    .footer h6{
+        padding-top: 20px;
+    }
+    
+    .footer{
+        background-color: #1D2D44;
+        padding: 30px;
+        padding-bottom: 10px;
+        color: #F0EBD8;
+        text-align: center;
+    }
+    
+    
+    .socials-section{
+        padding-top: 20px;
+        align-items: center;
+        display: inline-block;
+        display: flex;
+    }
+    
+    .socials-section div{
+        margin: auto;
+    }
+    
+    
+    
+    
+    
+    
+    .socials-section a{
+        color: #F0EBD8;
+        text-decoration: none;
+    }
+    
+    
+    /* Houses Page */
+    
+    .home-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/houses-banner.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .house-box1, .house-box2, .house-box3, .house-box4{
+        display: flex;
+    }
+    
+    .house-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+    .house-box1-img,  .house-box3-img{
+        margin-top: 30px;
+    }
+    .house-box2-img, .house-box4-img{
+        margin-top: 20px;
+    }
+
+    
+
+    
+    
+    
+    /* Condo Section */
+    
+    .condo-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/condo-banner.jpg");
+        background-clip: text;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        padding: 100px;
+        color: #F0EBD8;
+    }
+    
+    .condo-box1, .condo-box2, .condo-box3, .condo-box4{
+        display: flex;
+    }
+    
+    .condo-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+    .condo-box1-img, .condo-box2-img, .condo-box3-img, .condo-box4-img{
+        margin-top: 20px;
+    }
+
+
+    
+    /* Apartment Section */
+    
+    .apartment-section{
+        background-image: linear-gradient(to bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url("../images/apartment-ses.jpg");
+        display: flex;
+        background-position: center;
+        background-clip: text;
+        background-size: cover;
+        color: #F0EBD8;
+        padding: 100px;
+    }
+    
+    .apartment-box1, .apartment-box2, .apartment-box3, .apartment-box4{
+        display: flex;
+
+    }
+    
+    .apartment-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+    .apartment-box1-img, .apartment-box2-img, .apartment-box3-img, .apartment-box4-img{
+        margin-top: 10px;
+    }
+
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    
+    #nav-text{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #nav-text:hover{
+        filter: opacity(100%);
+    }
+    
+    #nav{
+        background-color: #1D2D44;
+    }
+    
+    #nav-button{
+        margin-right: 10px;
+    }
+    
+    #dropdown-nav{
+        background-color: #1D2D44;
+    }
+    
+    
+    
+    #dropdown-nav a{
+        color: #F0EBD8;
+        filter: opacity(80%);
+        margin-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 15px;
+    }
+    
+    #dropdown-nav a:hover{
+        filter:opacity(100%);
+    }
+    
+    #contact-dropdown{
+        margin-left: 20px;
+        color: #F0EBD8;
+        filter: opacity(80%);
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    #contact-dropdown:hover{
+        filter: opacity(100%);
+    }
+    
+    
+    
+    .banner{
+        position: fixed;
+        background-color: #1D2D44;
+        width: 100%;
+    }
+    
+    #nav-logo{
+        color: #F0EBD8;
+        padding-left: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    /* Global Selectors */
+    
+    .banner h1{
+        padding-left: 30px;
+        color: #F0EBD8;
+        font-size: 30px;
+    }
+    
+    .content{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/lounges-meadfoot-bay.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    header p{
+        font-size: 18px;
+    }
+    
+    h1, h2{
+        font-family: 'Inter Tight', sans-serif;
+
+    }
+
+    h3, h4{
+        font-size: 20px;
+    }
+    
+    p{
+        font-family: 'Titillium Web', sans-serif;
+    }
+    
+    .seperator{
+        background-color: #1D2D44;
+        padding: 20px;
+        text-align: center;
+        color: #F0EBD8;
+    }
+    
+    .item-list{
+        font-size: 20px;
+    }
+    
+    
+    
+    .row{
+        padding: 5px;
+        margin: auto;
+    }
+    
+    
+    button.home-section{
+        filter: opacity(0%);
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    button.home-section:hover{
+        filter: opacity(100%);
+    }
+    
+    .home-section, .condo-section, .apartment-section{
+        padding-top: 50px;
+        background-color: #F0EBD8;
+        padding-bottom: 50px;
+    }
+    
+    .home-section h5, .condo-section h5, .apartment-section h5{
+        margin-top: 10px;
+    }
+    
+    .item-list li{
+        list-style-type: none;
+        margin-bottom: 1px;
+        margin-left: -30px;
+        font-size: 15px;
+    }
+    
+    
+    
+    
+    /* Team About CSS Section */
+    
+    .team-section h1{
+        background-color:#1D2D44;
+        padding-bottom: 140px;
+    }
+    
+    
+    .team-section h1{
+        padding-top:70px;
+        color: #F0EBD8;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .about-section{
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
+    #about-img{
+        margin-top: -130px;
+        width: 50%;
+        height: 50%;
+        padding-right: 10%;
+        margin-right: 20%;
+        margin-left: 30%;
+    }
+    
+    
+    .about-text{
+        margin-top: 30px;
+        margin-bottom: 60px;
+        color:#1D2D44;
+        text-align: center;
+        font-size: 18px;
+        display: block;
+        justify-content: center;
+    }
+    
+    
+    /* Customer Service Page */
+    .contact-banner{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/customer_service.webp");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .contact-title{
+        margin: auto;
+    }
+    
+    .contact-title h3{
+        padding-top: 30px;
+        font-size: 40px;
+    }
+    
+    .table{
+        max-width: 55%;
+        border: 2px solid #1D2D44;
+    }
+    
+    .table thead{
+        background-color: #1D2D44;
+        color: #F0EBD8;
+    }
+    
+    .hotline-content, .email-content, .meeting-content{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .hours-section p, .email-section p, .meeting-section p{
+        text-align: center;
+    }
+    
+    .hours-table{
+        margin-left: 31%;
+    }
+    
+    .meeting-form{
+        max-width: 50%;
+        margin-left: 25.5%;
+    }
+    
+    
+    /* Main Footer Section */
+    
+    .footer h6{
+        padding-top: 20px;
+    }
+    
+    .footer{
+        background-color: #1D2D44;
+        padding: 30px;
+        padding-bottom: 10px;
+        color: #F0EBD8;
+        text-align: center;
+    }
+    
+    
+    .socials-section{
+        padding-top: 20px;
+        align-items: center;
+        display: inline-block;
+        display: flex;
+    }
+    
+    .socials-section div{
+        margin: auto;
+    }
+    
+    
+    
+    
+    
+    
+    .socials-section a{
+        color: #F0EBD8;
+        text-decoration: none;
+    }
+    
+    
+    /* Houses Page */
+    
+    .home-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/houses-banner.jpg");
+        background-size: cover;
+        background-clip: text;
+        background-position: center;
+        padding: 100px;
+        display: flex;
+        color: #F0EBD8;
+    }
+    
+    .house-box1, .house-box2, .house-box3, .house-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .house-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+
+    
+    
+    /* Condo Section */
+    
+    .condo-section{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/condo-banner.jpg");
+        background-clip: text;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        padding: 100px;
+        color: #F0EBD8;
+    }
+    
+    .condo-box1, .condo-box2, .condo-box3, .condo-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .condo-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+
+    
+    /* Apartment Section */
+    
+    .apartment-section{
+        background-image: linear-gradient(to bottom right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url("../images/apartment-ses.jpg");
+        display: flex;
+        background-position: center;
+        background-clip: text;
+        background-size: cover;
+        color: #F0EBD8;
+        padding: 100px;
+    }
+    
+    .apartment-box1, .apartment-box2, .apartment-box3, .apartment-box4{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+    
+    .apartment-box-text{
+        margin-left: 30px;
+        max-width: 45%;
+    }
+    
+}
